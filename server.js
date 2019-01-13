@@ -62,7 +62,7 @@ curut.get(function(req,res,next){
 
         if (err) return next("Cannot Connect");
 
-        var query = conn.query('SELECT * FROM employee_data',function(err,rows){
+        var query = conn.query('SELECT * FROM t_user',function(err,rows){
 
             if(err){
                 console.log(err);
