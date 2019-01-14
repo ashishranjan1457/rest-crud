@@ -22,8 +22,8 @@ app.use(
 
     connection(mysql,{
         host     : '${DB_ENDPOINT}',
-        user     : 'testapplication',
-        password : 'testapplication',
+        user     : '${DB_USERNAME}',
+        password : '${DB_PASSWORD}',
         database : 'test',
         debug    : false //set true if you wanna see debug logger
     },'request')
