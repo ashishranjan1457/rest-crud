@@ -21,7 +21,7 @@ var connection  = require('express-myconnection'),
 app.use(
 
     connection(mysql,{
-        host     : 'userdb.cpocqrrxahrg.us-east-1.rds.amazonaws.com',
+        host     : '${DB_ENDPOINT}',
         user     : 'testapplication',
         password : 'testapplication',
         database : 'test',
@@ -86,4 +86,3 @@ var server = app.listen(3000,function(){
    console.log("Listening to port %s",server.address().port);
 
 });
-
